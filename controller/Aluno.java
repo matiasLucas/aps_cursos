@@ -3,12 +3,11 @@ package controller;
 import java.util.ArrayList;
 import model.LeiaCsv;
 
-public class Aluno {
+public class Aluno extends LeiaCsv{
 	
 	public ArrayList<String[]> listaTodosAlunos(){
-		LeiaCsv objLerCsv = new LeiaCsv();
 		String csvPath = "src/arquivos_csv/alunos.csv";		
-		ArrayList<String[]> alunos = objLerCsv.leitura(csvPath);
+		ArrayList<String[]> alunos = leitura(csvPath);
 		return alunos;
 	}
 }

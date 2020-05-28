@@ -1,6 +1,7 @@
 package view;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import controller.Aluno;
@@ -10,13 +11,15 @@ public class ListaAlunos {
 	public void exibirAlunos() {
 		Aluno a = new Aluno();
 		ArrayList<String[]> lista = a.listaTodosAlunos();
-			for (String[] alunos : lista) {
-		         for (String aluno : alunos) {
-		        	 //Falta implementar uma exibição mais organizada
-		             System.out.println (aluno);
-		            
-		         }
-			} 
+		Iterator<String[]> itLista = lista.iterator();
+		
+		while(itLista.hasNext()) {
+			String[] alunos = itLista.next();
+			for (String aluno : alunos) { 
+				System.out.println(aluno);
+			}
+		}
+		
 		System.out.println("Pressione enter para continuar...");
 		scan.nextLine();
 	}
