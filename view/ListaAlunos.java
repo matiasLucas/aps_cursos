@@ -17,6 +17,7 @@ public class ListaAlunos {
 		            
 		         }
 			} 
+		System.out.println("Pressione enter para continuar...");
 		scan.nextLine();
 	}
 }

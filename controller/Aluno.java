@@ -7,7 +7,7 @@ public class Aluno {
 	
 	public ArrayList<String[]> listaTodosAlunos(){
 		LeiaCsv objLerCsv = new LeiaCsv();
-		String csvPath = "C:\\Users\\teixe\\OneDrive\\Documentos\\01\\alunos.csv";		
+		String csvPath = "src/arquivos_csv/alunos.csv";		
 		ArrayList<String[]> alunos = objLerCsv.leitura(csvPath);
 		return alunos;
 	}

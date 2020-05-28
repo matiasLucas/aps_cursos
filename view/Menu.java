@@ -9,7 +9,7 @@ public class Menu {
 		Scanner scan = new Scanner(System.in);
 		int opc = 0;
 		
-		while(opc<=8) {
+		while(opc!=8) {
 		System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
         System.out.println("	1 - Listar todos os cursos		                     ");
         System.out.println("    2 - Listar todos os alunos 			                 ");
@@ -46,9 +46,12 @@ public class Menu {
 	        		scan.close();
 	        		break;
 	        	default:
+	        		System.out.println("Opção inválida, pressione enter para continuar...");
+	        		scan.nextLine();
 	        		break;
 	        }
         }
+		
 	}
 	
 }

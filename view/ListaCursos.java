@@ -16,6 +16,7 @@ public class ListaCursos {
 		             System.out.println(curso);
 		         }
 			}
+		System.out.println("Pressione enter para continuar...");
 		scan.nextLine();
 	}
 }
