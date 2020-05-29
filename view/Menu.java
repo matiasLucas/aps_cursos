@@ -33,12 +33,19 @@ public class Menu {
 	        		la.exibirAlunos();
 	        		break;
 	        	case 3:
+	        		ListaHistorico lh = new ListaHistorico();
+	        		//lh.exibirHistorico();
 	        		break;
 	        	case 4:
+	        		
 	        		break;
 	        	case 5:
+	        		InsereAluno Ia = new InsereAluno();
+	        		Ia.InserirAluno();
 	        		break;
 	        	case 6:
+	        		InsereCurso Ic = new InsereCurso();
+	        		Ic.InserirCurso();
 	        		break;
 	        	case 7:
 	        		break;

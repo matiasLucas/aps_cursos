@@ -6,8 +6,9 @@ import java.util.Scanner;
 
 import controller.Curso;
 
-public class ListaCursos {
+public class ListaCursos extends Curso{
 	Scanner scan = new Scanner(System.in);
+
 	public void exibirCursos() {
 		Curso c = new Curso();
 		ArrayList<String[]> lista = c.listaTodosCursos();

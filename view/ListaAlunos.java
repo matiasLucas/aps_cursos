@@ -6,8 +6,9 @@ import java.util.Scanner;
 
 import controller.Aluno;
 
-public class ListaAlunos {
+public class ListaAlunos extends Aluno{
 	Scanner scan = new Scanner(System.in);
+	
 	public void exibirAlunos() {
 		Aluno a = new Aluno();
 		ArrayList<String[]> lista = a.listaTodosAlunos();
@@ -18,8 +19,7 @@ public class ListaAlunos {
 			for (String aluno : alunos) { 
 				System.out.println(aluno);
 			}
-		}
-		
+		}	
 		System.out.println("Pressione enter para continuar...");
 		scan.nextLine();
 	}
